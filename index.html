@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en-NZ" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <link href="./homepage.css" rel="stylesheet">
+        <script src="./darkmode.js"></script>
+        <script src="./typewriterTerminal.js"></script>
+        <title>Dysterio</title>
+    </head>
+    <body>
+        <!-- Terminal -->
+        <div class="terminal" style="float:center">
+            <h1 id="terminalText" style="padding: 1em;">&nbsp;</h1>
+            <script type="text/javascript">
+                startTypewriterEffect();
+            </script>
+        </div>
+        <!-- Darkmode Button -->
+        <div class="flip-card" style="float:right; width:125px; height:125px; top:0px; right:0px; position:fixed;">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <input type="image" src="images/moon.png"/>
+                </div>
+                <div class="flip-card-back">
+                    <input type="image" src="images/sun.png"/>
+                </div>
+                <script type="text/javascript">
+                    document.querySelectorAll("input").forEach((button) => {
+                        button.addEventListener("click", toggleLightMode);
+                    });
+                </script>
+            </div>
+        </div>
+        <div class="content">
+            <!-- Avatar -->
+            <div class="flip-card" style="float:left">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img class="avatar" src="images/avatar/normal.png" alt="Avatar">
+                    </div>
+                    <div class="flip-card-back">
+                        <img class="avatar" src="images/avatar/sunglasses.png" alt="Avatar with Sunglasses">
+                    </div>
+                </div>
+            </div>
+            <!-- About Me -->
+            <p style="padding:50px">
+                Working towards my Bachelors of Engineering with a double specialization in Artificial Intelligence & Networking, I'm a second year software engineering student at Victoria University of Wellington. Being a technology and programming enthusiast, most of my time outside of university is spent on improving my personal projects, or learning about developing technologies.<br><br>
+                Since childhood, I’ve been fascinated by computers and their ability to perform complex tasks in seconds. This interest increased when I did Digital Technology at highschool. At that time, I learned to develop games using GameMaker Language. Thereafter, I developed a keen interest in application development. This also made me realize the impact I could make on people’s lives through these mediums.<br><br>
+                Challenges fuel my passion. I don’t give up when the going gets tough. I am keen to keep learning and use this knowledge to achieve better outcomes for society and myself.<br><br>
+            </p>
+        </div>
+    </body>
+</html>
